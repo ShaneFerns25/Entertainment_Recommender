@@ -18,6 +18,7 @@ var isCard=0;
 function reSelect(){
     if (isCard==1){
         isCard=0;
+        const text = document.querySelector(".text");
         const venus = document.querySelector(".venus");
         const dropdownbtn = document.querySelector(".dropdown-btn");
         const reselectbtns = document.querySelector(".reselect-btns");
@@ -33,7 +34,7 @@ function reSelect(){
             animateClicked.classList.add("visibility-hide")
             reselectbtns.classList.add("visibility-hide");
             dropdownbtn.classList.remove("visibility-hide");
-            
+            text.style.opacity= "0";
             
         }
         setTimeout(afterDelay, 2200);
