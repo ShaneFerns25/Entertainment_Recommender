@@ -11,36 +11,36 @@
         Entertainment Recommender
     </div>
     
-        <div class="reselect-btns visibility-hide">
-            <div class="reselect-btn" onclick="reSelect()">
-                <span class="span1">Reselect</span>
-            </div>
-            <div class="reselect-btn2"></div>
-            <div class="clicked visibility-hide">
-                <div class="clicked-animate clicked-animate-1"></div>
-                <div class="clicked-animate clicked-animate-2"></div>
-                <div class="clicked-animate clicked-animate-3"></div>
-                <div class="clicked-animate clicked-animate-4"></div>
-                <div class="clicked-animate clicked-animate-5"></div>
-                <div class="clicked-animate clicked-animate-6"></div>
-            </div>
+    <div class="reselect-btns visibility-hide">
+        <div class="reselect-btn" onclick="reSelect()">
+            <span class="span1">Reselect</span>
         </div>
-        <div class="dropdown">
-            <button class="dropdown-btn" aria-haspopup="menu">
-                <span>Anime Genres</span>
-                <span class="arrow"></span>
-            </button>
-            <ul class="dropdown-content" role="menu">
-                <li style="--delay: 1;" onclick="changeShape()">Romance</li>
-                <li style="--delay: 2;" onclick="changeShape()">Comedy</li>
-                <li style="--delay: 3;" onclick="changeShape()">Action</li>
-                <li style="--delay: 4;" onclick="changeShape()">Adventure</li>
-            </ul>
+        <div class="reselect-btn2"></div>
+        <div class="clicked visibility-hide">
+            <div class="clicked-animate clicked-animate-1"></div>
+            <div class="clicked-animate clicked-animate-2"></div>
+            <div class="clicked-animate clicked-animate-3"></div>
+            <div class="clicked-animate clicked-animate-4"></div>
+            <div class="clicked-animate clicked-animate-5"></div>
+            <div class="clicked-animate clicked-animate-6"></div>
         </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropdown-btn" aria-haspopup="menu">
+            <span>Anime Genres</span>
+            <span class="arrow"></span>
+        </button>
+        <ul class="dropdown-content" role="menu">
+            <li style="--delay: 1;" onclick="changeShape()">Romance</li>
+            <li style="--delay: 2;" onclick="changeShape()">Comedy</li>
+            <li style="--delay: 3;" onclick="changeShape()">Action</li>
+            <li style="--delay: 4;" onclick="changeShape()">Adventure</li>
+        </ul>
+    </div>
 
-        <div class="venus">
-            <div class="text">HELLO</div>
-        </div>
+    <div class="venus">
+        <div class="text">HELLO</div>
+    </div>
     
     <script src="{{url_for('static',filename='index.js')}}"></script>
 </body>
