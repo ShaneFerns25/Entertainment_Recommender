@@ -1,0 +1,245 @@
+body{
+    background-image: url(./jeremy-perkins-uhjiu8FjnsQ-unsplash-m.jpg);
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    animation: spin 20s linear alternate infinite;
+}
+
+@keyframes spin {
+    100%{background-position: 100%;}
+}
+
+.span1{
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30%;
+}
+
+.reselect-btns{
+  position: absolute;
+  top: 25px;
+  left: 28%;
+  width: 700px;
+  height: 700px;
+  z-index: 4;
+}
+
+.reselect-btn {
+    position: absolute;
+    top: 15%;
+    left: 38%;
+    width: 150px;
+    height: 50px;
+    color: white;
+    border: 3px solid white;
+    border-radius: 50px;
+    background-color: black;
+    z-index: 1;
+    transform: rotate(-10deg);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.reselect-btn2 {
+    position: absolute;
+    top: 16.8%;
+    left: 37.8%;
+    width: 150px;
+    height: 50px;
+  
+    border: 3px solid white;
+    border-radius: 50px;
+    background-color: black;
+    transform: rotate(-10deg);
+    transition: all .15s .15s ease-out;
+    cursor: pointer;
+}
+
+
+/* dropdown code*/
+
+.dropdown {
+    max-width: 13em;
+    margin: 80px auto 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:50px;
+    width: 100%;
+    
+  }
+  
+  .dropdown-btn {
+    background: white;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7em 0.5em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: all .8s ease-in-out;
+    transform: scale(1);
+  }
+  
+  .arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid black;
+    transition: transform ease-in-out 0.3s;
+  }
+  
+  .dropdown-content {
+    list-style: none;
+    position: absolute;
+    top: 3.2em;
+    width: 100%;
+    visibility: hidden;
+    overflow: hidden;
+  }
+  
+  .dropdown-content li {
+    background: white;
+    border-radius: 0.5em;
+    position: relative;
+    left: 100%;
+    transition: 0.5s;
+    transition-delay: calc(60ms * var(--delay));
+    display: block;
+    padding: 0.7em 0.5em;
+    color: black;
+    margin: 0.1em 0;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-btn:focus + .dropdown-content li {
+    left: 0;
+  }
+  
+  .dropdown-btn:focus + .dropdown-content {
+    visibility: visible;
+  }
+  
+  .dropdown-btn:focus > .arrow {
+    transform: rotate(180deg);
+  }
+  
+  .dropdown-content li:hover {
+    background: white;
+  }
+  
+  /* base styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+/*  */
+
+.venus{
+    position: absolute;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    bottom: 75px;
+    left: 0;
+    right: 0;
+    background-image: url(./8k_venus_surface.jpg);
+    background-size: cover;
+    box-shadow: -20px -20px 50px -50px #ff6004 inset, 0 0 20px 2px #f75d04;
+    animation: spin 30s linear alternate infinite;
+    transition: all .8s ease-in-out;
+}
+  
+@keyframes spin {
+    100%{background-position: 100%;}
+}
+
+.text {
+    color: #fff;
+    opacity: 0;
+    text-align: center;
+    padding-top: 0px;
+    transition: all .3s ease-in-out;
+}
+
+.card {
+  position: inherit;
+  width: 400px;
+  height: 450px;
+  background: white;
+  border-radius: 5px;
+}
+
+.visibility-hide{
+    visibility:hidden;
+    transform: scale(0);
+}
+
+.pressed{
+  top: 16.8%;
+  left: 37.8%;
+}
+
+.clicked-animate{
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  color: white;
+  border: 3px solid white;
+  background-color: black;
+  z-index: 1;
+  transition: all .5s ease-in-out;
+}
+
+.clicked-animate-1{
+  top: 18%;
+  left: 31%;
+  transform: rotate(10deg);
+}
+
+.clicked-animate-2{
+  top: 23%;
+  left: 31%;
+  transform: rotate(-10deg);
+}
+
+.clicked-animate-3{
+  top: 28%;
+  left: 33%;
+  transform: rotate(-40deg);
+}
+
+.clicked-animate-4{
+  top: 12%;
+  left: 61%;
+  transform: rotate(-40deg);
+}
+
+.clicked-animate-5{
+  top: 17%;
+  left: 63%;
+  transform: rotate(-10deg);
+}
+
+.clicked-animate-6{
+  top: 22%;
+  left: 63%;
+  transform: rotate(10deg);
+}
