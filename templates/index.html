@@ -31,10 +31,10 @@
             <span class="arrow"></span>
         </button>
         <ul class="dropdown-content" role="menu">
-            <li style="--delay: 1;" onclick="changeShape()">Romance</li>
-            <li style="--delay: 2;" onclick="changeShape()">Comedy</li>
-            <li style="--delay: 3;" onclick="changeShape()">Action</li>
-            <li style="--delay: 4;" onclick="changeShape()">Adventure</li>
+            <li name="Romance" id="Romance" style="--delay: 1;" onclick="changeShape(this)">Romance</li>
+            <li name="Comedy" id="Comedy" style="--delay: 2;" onclick="changeShape(this)">Comedy</li>
+            <li name="Action" id="Action" style="--delay: 3;" onclick="changeShape(this)">Action</li>
+            <li name="Adventure" id="Adventure" style="--delay: 4;" onclick="changeShape(this)">Adventure</li>
         </ul>
     </div>
 
@@ -43,5 +43,6 @@
     </div>
     
     <script src="{{url_for('static',filename='index.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </body>
 </html>

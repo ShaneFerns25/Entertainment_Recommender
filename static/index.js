@@ -42,11 +42,24 @@ function reSelect(){
     }
 }
 
-function changeShape(){
+function changeShape(val){
     const venus = document.querySelector(".venus");
     const text = document.querySelector(".text");
     const dropdownbtn = document.querySelector(".dropdown-btn");
     const reselectbtns = document.querySelector(".reselect-btns");
+    const selected = val.getAttribute("id");
+
+    // ajax call to post genre
+    
+
+    $.ajax({ 
+        url: '/genre', 
+        type: 'POST', 
+        data: {'selected':selected},
+        success: function(response){ 
+            console.log('success')
+        } 
+    })
 
     isCard=1;
     dropdownbtn.classList.add("visibility-hide");
@@ -55,7 +68,7 @@ function changeShape(){
     text.style.paddingTop= "85px";
     text.style.opacity= "1";
 
-    console.log("here");
+    console.log(selected);
 }
 
 // const dropdown = document.querySelectorAll("li");

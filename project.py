@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -9,8 +9,11 @@ def main():
 def index():
     return render_template('index.html')
 
-def function_2():
-    ...
+@app.route('/genre',methods=['POST'])
+def genre():
+    genre = request.values.get('selected')
+    print(genre)
+    return 'ok'
 
 def function_n():
     ...
