@@ -51,22 +51,26 @@ function changeShape(val){
 
     // ajax call to post genre
     
-
     $.ajax({ 
         url: '/genre', 
-        type: 'POST', 
+        type: 'POST',
         data: {'selected':selected},
         success: function(response){ 
-            console.log('success')
+            $('#anime_img').attr("src",response[0].image);
+            $('#anime_title').html(response[0].title);
+            $('#anime_desc').html(response[0].desc);
         } 
     })
 
     isCard=1;
     dropdownbtn.classList.add("visibility-hide");
-    setTimeout(()=>reselectbtns.classList.remove("visibility-hide"),2000);
-    venus.classList.add("card");
-    text.style.paddingTop= "85px";
-    text.style.opacity= "1";
+    setTimeout(()=>reselectbtns.classList.remove("visibility-hide"),1500);
+    const afterDelay = () => {
+        venus.classList.add("card");
+        text.style.paddingTop= "5px";
+        text.style.opacity= "1";
+    }
+    setTimeout(afterDelay, 1000);
 
     console.log(selected);
 }

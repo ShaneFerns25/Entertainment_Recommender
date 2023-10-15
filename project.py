@@ -10,7 +10,7 @@ def main():
 def index():
     return render_template('index.html')
 
-@app.route('/genre',methods=['POST'])
+@app.route('/genre',methods=['GET','POST'])
 def genre():
     genre_id = request.values.get('selected')
 
@@ -18,15 +18,18 @@ def genre():
     print(response)
     if response.status_code == 200:
         anime_list = response.json()
-        data=anime_list["data"][0]
-        image = data["images"]["jpg"]["image_url"]
-        title = data["title"]
-        desc = data["synopsis"].split('\n')[0]
-        print(image,title,desc)
+        list_data=anime_list["data"][0]
+        image = list_data["images"]["jpg"]["image_url"]
+        title = list_data["title"]
+        desc = list_data["synopsis"].split('\n')[0]
+
+        data=[{'image':image,'title':title,'desc':desc}]
+
+        return data
     else:
         # Handle the error
         print("An error occurred while retrieving the list of anime.")
-    return 'ok'
+        return 'ok'
 
 def function_n():
     ...

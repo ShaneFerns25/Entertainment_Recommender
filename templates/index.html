@@ -31,16 +31,20 @@
             <span class="arrow"></span>
         </button>
         <ul class="dropdown-content" role="menu">
-            <li name="Action" id="1" style="--delay: 3;" onclick="changeShape(this)">Action</li>
-            <li name="Adventure" id="2" style="--delay: 4;" onclick="changeShape(this)">Adventure</li>
-            <li name="Comedy" id="4" style="--delay: 2;" onclick="changeShape(this)">Comedy</li>
+            <li name="Action" id="1" style="--delay: 1;" onclick="changeShape(this)">Action</li>
+            <li name="Adventure" id="2" style="--delay: 2;" onclick="changeShape(this)">Adventure</li>
+            <li name="Comedy" id="4" style="--delay: 3;" onclick="changeShape(this)">Comedy</li>
             <li name="Fantasy" id="10" style="--delay: 4;" onclick="changeShape(this)">Fantasy</li>
-            <li name="Romance" id="22" style="--delay: 1;" onclick="changeShape(this)">Romance</li>
+            <li name="Romance" id="22" style="--delay: 5;" onclick="changeShape(this)">Romance</li>
         </ul>
     </div>
 
     <div class="venus">
-        <div class="text">HELLO</div>
+        <div class="text">
+            <img width="250" height="250" id="anime_img" src="" alt="anime image">
+            <h3 id="anime_title"></h3>
+            <p id="anime_desc"></p>
+        </div>
     </div>
     
     <script src="{{url_for('static',filename='index.js')}}"></script>

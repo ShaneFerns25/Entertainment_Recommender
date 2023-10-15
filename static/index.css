@@ -194,7 +194,7 @@ body{
   position: inherit;
   bottom: 30px;
   width: 400px;
-  height: 450px;
+  height: 460px;
   background: white;
   border-radius: 5px;
 }
@@ -254,4 +254,12 @@ body{
   top: 22%;
   left: 63%;
   transform: rotate(10deg);
+}
+
+.text > * {
+  margin-top: 5px;
+}
+
+.text > img{
+  border-radius: 5px;
 }
