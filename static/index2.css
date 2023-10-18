@@ -13,7 +13,7 @@
 .reselect-btns2{
   position: absolute;
   top: 25px;
-  right: 10%;
+  right: 13%;
   width: 700px;
   height: 700px;
   z-index: 4;
@@ -167,7 +167,7 @@
   bottom: 30px;
   width: 400px;
   height: 460px;
-  right: 20%;
+  right: 23%;
   background: white;
   border-radius: 5px;
   overflow: hidden;
