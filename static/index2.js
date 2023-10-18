@@ -32,20 +32,20 @@ function changeShape2(val){
     const text2 = document.querySelector(".text2");
     const dropdown2 = document.querySelector(".dropdown2");
     const reselectbtns2 = document.querySelector(".reselect-btns2");
-    const selected = val.getAttribute("id");
+    const selected = val.getAttribute("name");
 
     // ajax call to post movie genre
     
-    // $.ajax({ 
-    //     url: '/moviegenre', 
-    //     type: 'POST',
-    //     data: {'selected':selected},
-    //     success: function(response){ 
-    //         $('#movie_img').attr("src",response[0].image);
-    //         $('#movie_title').html(response[0].title);
-    //         $('#movie_desc').html(response[0].desc);
-    //     } 
-    // })
+    $.ajax({ 
+        url: '/moviegenre', 
+        type: 'POST',
+        data: {'selected':selected},
+        success: function(response){ 
+            $('#movie_img').attr("src",response[0].image);
+            $('#movie_title').html(response[0].title);
+            $('#movie_desc').html(response[0].desc);
+        } 
+    })
 
     isCard2=1;
     dropdown2.classList.add("visibility-hide");
