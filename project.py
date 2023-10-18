@@ -10,7 +10,7 @@ def main():
 def index():
     return render_template('index.html')
 
-@app.route('/genre',methods=['GET','POST'])
+@app.route('/animegenre',methods=['GET','POST'])
 def genre():
     genre_id = request.values.get('selected')
 

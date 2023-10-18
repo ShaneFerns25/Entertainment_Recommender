@@ -49,10 +49,10 @@ function changeShape(val){
     const reselectbtns = document.querySelector(".reselect-btns");
     const selected = val.getAttribute("id");
 
-    // ajax call to post genre
+    // ajax call to post anime genre
     
     $.ajax({ 
-        url: '/genre', 
+        url: '/animegenre', 
         type: 'POST',
         data: {'selected':selected},
         success: function(response){ 
