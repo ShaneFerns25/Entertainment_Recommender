@@ -40,8 +40,9 @@ def genre():
         print("An error occurred while retrieving the list of anime.")
         return 'ok'
 
-def function_n():
-    ...
+@app.route('/moviegenre')
+def moviegenre():
+    return 'hi'
 
 if __name__ == "__main__":
     main()

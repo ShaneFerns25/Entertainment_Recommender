@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Project</title>
     <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='index2.css')}}">
 </head>
 <body>
     <div class="title">
@@ -46,8 +47,47 @@
             <p id="anime_desc"></p>
         </div>
     </div>
+
+    
+    <div class="reselect-btns2 visibility-hide">
+        <div class="reselect-btn neptune-reselect-btn" onclick="reSelect2()">
+            <span class="span1">Reselect</span>
+        </div>
+        <div class="reselect-btn2"></div>
+        <div class="clicked2 visibility-hide">
+            <div class="clicked-animate clicked-animate-1"></div>
+            <div class="clicked-animate clicked-animate-2"></div>
+            <div class="clicked-animate clicked-animate-3"></div>
+            <div class="clicked-animate clicked-animate-4"></div>
+            <div class="clicked-animate clicked-animate-5"></div>
+            <div class="clicked-animate clicked-animate-6"></div>
+        </div>
+    </div>
+    <div class="dropdown2">
+        <button class="dropdown-btn" aria-haspopup="menu">
+            <span>Anime Genres</span>
+            <span class="arrow"></span>
+        </button>
+        <ul class="dropdown-content" role="menu">
+            <li name="Action" id="1" style="--delay: 1;" onclick="changeShape2(this)">Action</li>
+            <li name="Adventure" id="2" style="--delay: 2;" onclick="changeShape2(this)">Adventure</li>
+            <li name="Comedy" id="4" style="--delay: 3;" onclick="changeShape2(this)">Comedy</li>
+            <li name="Fantasy" id="10" style="--delay: 4;" onclick="changeShape2(this)">Fantasy</li>
+            <li name="Romance" id="22" style="--delay: 5;" onclick="changeShape2(this)">Romance</li>
+        </ul>
+    </div>
+
+    <div class="neptune">
+        <div class="text2">
+            <img width="250" height="250" id="movie_img" src="" alt="movie image">
+            <h3 id="movie_title"></h3>
+            <p id="movie_desc"></p>
+        </div>
+    </div>
+    
     
     <script src="{{url_for('static',filename='index.js')}}"></script>
+    <script src="{{url_for('static',filename='index2.js')}}"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </body>
 </html>
