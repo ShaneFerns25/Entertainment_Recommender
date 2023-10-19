@@ -11,7 +11,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/animegenre',methods=['POST'])
-def genre():
+def animegenre():
     genre_id = request.values.get('selected')
 
     response = requests.get(f"https://api.jikan.moe/v4/anime?type=tv&rating=g&rating=pg&rating=pg13&order_by=popularity&genres={genre_id}&limit=20")

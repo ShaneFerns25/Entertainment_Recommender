@@ -2,3 +2,5 @@
 flask
 requests
 random
+pytest
+pytest_mock
