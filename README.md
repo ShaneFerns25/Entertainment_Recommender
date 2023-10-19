@@ -64,4 +64,4 @@
 > Where to get CS50P course?
 https://learning.edx.org/course/course-v1:HarvardX+CS50P+Python/home or https://cs50.harvard.edu/python/2022/
 
-[LinkedIn Shane Fernandes](www.linkedin.com/in/shane-fernandes-330677212)
+[LinkedIn Shane Fernandes](https://www.linkedin.com/in/shane-fernandes-330677212/)
