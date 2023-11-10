@@ -4,7 +4,7 @@ import requests, random
 app = Flask(__name__)
 
 def main():
-    app.run(debug=True)
+    app.run()
 
 @app.route('/')
 def index():
